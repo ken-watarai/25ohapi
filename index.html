@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./umd/gsap.js"></script> -->
+    
+    <title>誕生日もごろごろ</title>
+</head>
+<body>
+    <section class="intro">
+        <h1>スクロール</h1>
+        <div class="arrow"></div>
+    </section>
+    <section class="main">
+        <div class="img-outer">
+            <img src="main.jpg" alt="main charactor">
+        </div>
+        <p><span>ごろごろ大好き</span></p>
+        <p><span>だって布団がまだって言うから</span></p>
+        <p><span>ごろごろは平和</span></p>
+        <p><span>平和が一番</span></p>
+        <p><span>布団は平和の象徴</span></p>
+        <p><span>鳩じゃない、鳩は許さないわよ</span></p>
+        <p><span>ところで今日何日？</span></p>
+        <p><span>あ、誕生日だ、</span></p>
+        <p><span>あぶない、<br>寝過ごすとこだった</span></p>
+        <p><span>わてぃに祝ってもらおうかしら</span></p>
+        <p class="watty"><span>かしこまりました！</span></p>
+    </section>
+    <section class="celebration">
+        <div class="area js-area">
+            <div class="wrap">
+                <div class="item item01 js-item js-item01"><span>1</span></div>
+                <div class="item item02 js-item js-item02"><span>2</span></div>
+                <div class="item item03 js-item js-item03"><span>1</span></div>
+                <div class="item item04 js-item js-item04"><span>9</span></div>
+                <div class="item item05 js-item js-item05">
+                    <!-- <span>25</span> -->
+                    <div class="img-outer"><img src="ohapi.png" alt="ohapi"></div>
+                </div>
+            </div>
+            <!-- ピタッとさせる？ -->
+            <div class="message">
+                <h2>誕生日おめでとう</h2>
+                <p>十分お姉さんね</p>
+                <p>ごろごろが大好きな未穂が大好きだよ</p>
+                <p>これからも<br>ごろごろだらだらしようね</p>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="img-outer">
+            <img src="main.jpg" alt="main charactor" id="img1">
+            <img src="main2.jpg" alt="main charactor" id="img2" class="disappear">
+        </div>
+        <p class="watty"><span>どうでしょうか、</span></p>
+        <p><span>まあ合否はLINEするね</span></p>
+        <p><span>わてぃ、これいつ作ってたの？</span></p>
+        <p class="watty"><span>夜中です</span></p>
+        <p><span>今眠い？</span></p>
+        <p class="watty"><span>はい</span></p>
+        <p><span>わたしも</span></p>
+        <p class="watty"><span>知ってる</span></p>
+        <p><span class="js-scroll">zzz</span></p>
+        <p class="watty"><span>寝るのはやっ</span></p>
+    </section>
+    <section class="last-message">
+        <div><p>25歳だね</p></div>
+        <div><p>おめでとう</p></div>
+        <div><p>いつもハッピーにしてくれてありがとう</p></div>
+        <div><p>End</p></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
