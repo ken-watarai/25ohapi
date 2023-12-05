@@ -27,6 +27,9 @@ section.intro .arrow {
   border-bottom: solid 1px #000;
   border-right: solid 1px #000;
 }
+section.main {
+  height: auto;
+}
 section.main .img-outer {
   position: -webkit-sticky;
   position: sticky;
@@ -51,22 +54,22 @@ section.main .img-outer img {
 section.main .img-outer img.disappear {
   opacity: 0;
 }
-section.main p {
+section.main .comments p {
   height: 80vh;
   margin: 0 auto;
   text-align: center;
   line-height: 23px;
 }
-section.main p:first-child {
+section.main .comments p:first-child {
   padding-top: 50px;
 }
-section.main p span {
+section.main .comments p span {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-section.main p.watty {
+section.main .comments p.watty {
   color: #329bb5;
 }
 section.main .last-msg-outer {
