@@ -8,7 +8,7 @@ const section1_comments = [
   "鳩じゃない、鳩は許さないわよ",
   "ところで今日何日？",
   "あ、誕生日だ、",
-  "あぶない、<br>寝過ごすとこだった",
+  "あぶない、寝過ごすとこだった",
   "わてぃに祝ってもらおうかしら",
   "かしこまりました！wty"
 ]
@@ -23,32 +23,41 @@ const section2_comments = [
   "はいwty",
   "わたしも",
   "知ってるwty",
-  "zzz",
+  "zzztrg",
   "寝るのはやっ、wty"
 ]
+
+key_class_wty = {key:"wty", class:"watty"}
+key_class_trg = {key:"trg", class:"js-scroll"}
 
 function comment_generator(list, sec_cmt) {
   for (let i = 0; i < list.length; i++) {
     const newP = document.createElement("p");
     const newSpan = document.createElement("span");
     let comment = list[i];
-    if(comment.slice(-3) == "wty"){
-      const wty_cmt = comment.replace("wty", "");
-      newSpan.textContent = wty_cmt;
+    let comment_last_three = comment.slice(-3);
+    if(comment_last_three == "wty"){
+      comment = repalce_and_text(comment, "wty");
       newP.classList.add('watty');
-    } else {
-      newSpan.textContent = comment;
+    } else if (comment_last_three == "trg") {
+      comment = repalce_and_text(comment, "trg");
+      newP.classList.add('js-scroll');
     }
+    newSpan.textContent = comment;
     newP.appendChild(newSpan);
     sec_cmt.appendChild(newP);
   }
 }
+function repalce_and_text(comment ,class_name){
+    const original_content = comment.replace(class_name, "");
+    return original_content;
+}
+
 comment_generator(section1_comments, section1_comment);
 comment_generator(section2_comments, section2_comment);
 
 
 window.addEventListener("load", function(){
-
     //プラグインを定義
     gsap.registerPlugin(ScrollTrigger);
   
