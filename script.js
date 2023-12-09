@@ -27,9 +27,6 @@ const section2_comments = [
   "寝るのはやっ、wty"
 ]
 
-key_class_wty = {key:"wty", class:"watty"}
-key_class_trg = {key:"trg", class:"js-scroll"}
-
 function comment_generator(list, sec_cmt) {
   for (let i = 0; i < list.length; i++) {
     const newP = document.createElement("p");
